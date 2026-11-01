@@ -5,7 +5,7 @@ fun main() {
 
     val members = listOf(member1,TeamMember2, member3,member4)
 
-    for(member in members){
-        println("${member.name}, ${member.age} ,${member.university}, ${member.role}")
+    members.forEachIndexed { index, member ->
+        println("Member ${index + 1}: ${member.name}, ${member.university}, ${member.age}, ${member.role}")
     }
-}
+    }
